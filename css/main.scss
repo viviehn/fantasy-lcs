@@ -49,6 +49,10 @@ $baseurl:"{{ site.baseurl }}";
 	background-image: url($baseurl + '/_assets/header.jpg')
 }
 
+.big-container {
+    width:80%;
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
