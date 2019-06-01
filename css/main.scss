@@ -27,7 +27,7 @@ $content-width:    800px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
-
+$baseurl:"{{ site.baseurl }}";
 
 
 // Use media queries like this:
@@ -44,6 +44,10 @@ $on-laptop:        800px;
 }
 
 
+.header-bg {
+	background-color: transparent;
+	background-image: url($baseurl + '/_assets/header.jpg')
+}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
@@ -51,3 +55,4 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
