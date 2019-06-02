@@ -44,14 +44,6 @@ $baseurl:"{{ site.baseurl }}";
 }
 
 
-.header-bg {
-	background-color: transparent;
-	background-image: url($baseurl + '/_assets/header.jpg')
-}
-
-.big-container {
-    width:80%;
-}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
@@ -60,3 +52,33 @@ $baseurl:"{{ site.baseurl }}";
         "syntax-highlighting"
 ;
 
+.header-bg {
+	background-color: transparent;
+    background-size: 100% 100%;
+	background-image: url($baseurl + '/assets/header.jpg');
+    color:white;
+    h1 {
+        font-size:450%;
+    }
+    font-size:150%;
+}
+
+.left {
+    text-align: right;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.pad {
+    padding: 10px;
+}
+
+h5 {
+    color: $grey-color-dark;
+}
+
+.big-container {
+    width:80%;
+}
